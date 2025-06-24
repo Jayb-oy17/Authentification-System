@@ -15,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.5s ease;
 }
 
 .container,
@@ -33,7 +32,7 @@ body {
 
 h2 {
   margin-bottom: 15px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
@@ -61,10 +60,9 @@ input {
 
 .toggle-password {
   position: absolute;
-  top: 50%;
+  top: 5%;
   right: 10px;
-  transform: translateY(-50%);
-  background: none;
+  background-color: transparent;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -81,6 +79,10 @@ input {
 .remember input {
   width: auto;
   margin-right: 6px;
+}
+
+.remember label{
+   font-size: 15px;
 }
 
 button {
@@ -107,15 +109,20 @@ button:hover {
   cursor: pointer;
   text-decoration: underline;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 15px;
+  margin-bottom: 1rem;
 }
 
 .message {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: yellow;
   min-height: 20px;
 }
 
 .success {
   color: lightgreen;
+}
+
+.dashboard p{
+   font-size: 14px;
 }
