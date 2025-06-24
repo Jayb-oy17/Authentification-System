@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Auth Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container" id="authBox">
+      <h2 id="formTitle">Sign Up</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Password" required />
+        <button class="toggle-password" id="togglePass">Show</button>
+      </div>
+      <div class="password-wrapper">
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+      <div class="remember">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember Me</label>
+      </div>
+      <button id="submitBtn">Sign Up</button>
+      <div class="switch" id="switchMode">Already have an account? Login</div>
+      <div class="message" id="message"></div>
+    </div>
+
+    <div class="dashboard" id="dashboard" style="display: none">
+      <h2>Welcome, <span id="userEmail"></span>!</h2>
+      <p>You are securely logged in. Enjoy your stay!</p>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
