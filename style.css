@@ -25,9 +25,15 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 320px;
+  width: 50%;
   color: #fff;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+   .container, .dashboard{
+      width: 90%;
+   }
 }
 
 h2 {
@@ -60,10 +66,12 @@ input {
 
 .toggle-password {
   position: absolute;
-  top: 5%;
-  right: 10px;
+  top: 0;
+  right: 1px;
+  height: 33px;
   background-color: transparent;
   border: none;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 0.9rem;
